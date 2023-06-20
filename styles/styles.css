@@ -1,0 +1,64 @@
+:root {
+    --gold: #feda6a;
+    --silver: #d4d4dc;
+    --matte: #393f4d;
+    --slate: #1d1e22;
+}
+
+html, body {
+    margin: 10px;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--slate);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+    width: 80vw;
+    padding: 20px;
+    background-color: var(--slate);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+.sigCard {
+    box-sizing: border-box;
+    border: 1px solid var(--slate);
+    background-color: var(--silver);
+    width: 300px;
+    height: stretch;
+    padding: 15px 10px 10px;
+    margin-right: 2%;
+}
+
+.card {
+    box-sizing: border-box;
+    border: 1px solid var(--slate);
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    display: none;
+}
+
+input[type=text] {
+    margin: 2px;
+}
+
+input[type=button] {
+    margin-bottom: 10px;
+}
+
+#privacyText {
+    font-size: 12px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="sigScript.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="sigCard">
+      <form id="signatureForm">
+        Full Name (e.g., Jane Doe):<br>
+        <input type="text" id="fullName" name="fullName">
+        <br>
+        P Number (e.g., 12345):<br>
+        <input type="text" id="pNumber" name="pNumber">
+        <br>
+        Unit:<br>
+        <input type="text" id="unit" name="unit">
+        <br>
+        Work Cell Phone:<br>
+        <input type="text" id="workCell" name="workCell">
+        <br>
+        Desk Phone:<br>
+        <input type="text" id="deskPhone" name="deskPhone">
+        <br>
+        Fax:<br>
+        <input type="text" id="fax" name="fax">
+        <br>
+        E-mail:<br>
+        <input type="text" id="email" name="email">
+        <br><br>
+        <input type="button" value="Generate Signature" onclick="generateSignature()">
+      </form>
+    </div>
+    <div class="card">
+      <div id="signature"></div>
+    </div>
+  </div>
+</body>
+
+</html>
