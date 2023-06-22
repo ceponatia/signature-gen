@@ -12,8 +12,21 @@ function formatPhoneNumber(number) {
 }
 
 function copySignatureToClipboard() {
-    var signature = document.getElementById("signature").innerHTML;
-    copyToClipboard(signature);
+  var signatureHtml = document.getElementById('signature').innerHTML;
+
+  // Create a temporary textarea element
+  var tempTextArea = document.createElement('textarea');
+  tempTextArea.value = signatureHtml;
+  document.body.appendChild(tempTextArea);
+
+  // Select and copy the content of the textarea
+  tempTextArea.select();
+  document.execCommand('copy');
+
+  // Remove the temporary textarea
+  document.body.removeChild(tempTextArea);
+
+  console.log('Signature copied to clipboard');
 }
 
 function populateUnitSelect() {
