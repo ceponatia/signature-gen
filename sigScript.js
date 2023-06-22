@@ -16,7 +16,7 @@ function formatPhoneNumber(number) {
 function populateUnitSelect() {
   const unitSelect = document.getElementById("unit");
   const unitOptions = [
-    "Prosecuting Attorney",
+    "Assistant Prosecuting Attorney",
     "Administrative Coordinator",
     "Animal Cruelty",
     "Appeals and Paroles",
