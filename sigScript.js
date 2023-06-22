@@ -110,7 +110,7 @@ function generateSignature() {
   fax = formatPhoneNumber(fax);
 
 var assistantLine = "";
-  if (unit === "Prosecuting Attorney") {
+  if (unit === "Assistant Prosecuting Attorney") {
     assistantLine = "<br>Assistant Prosecuting Attorney";
   }
 
