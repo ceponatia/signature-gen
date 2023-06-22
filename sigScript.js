@@ -12,13 +12,8 @@ function formatPhoneNumber(number) {
 }
 
 function copySignatureToClipboard() {
-    var signature = document.getElementById("signature");
-    var range = document.createRange();
-    range.selectNode(signature);
-    window.getSelection().removeAllRanges();
-    window.getSelection().addRange(range);
-    document.execCommand("copy");
-    window.getSelection().removeAllRanges();
+    var signature = document.getElementById("signature").innerHTML;
+    copyToClipboard(signature);
 }
 
 function populateUnitSelect() {
