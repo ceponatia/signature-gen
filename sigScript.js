@@ -114,7 +114,7 @@ function generateSignature() {
     <strong>${fullName}${pNumber ? " (P" + pNumber + ")" : ""}${
     pNumber ? "<br>Assistant Prosecuting Attorney" : ""
   }</strong><br>
-      ${unit ? unit + "<br>" : ""}
+      ${unit === "Prosecuting Attorney" ? "" : (unit ? unit + "<br>" : "")} // Omit unit for "Prosecuting Attorney"
       Macomb County Prosecutor's Office<br>
       One South Main - 4th Floor<br>
       Mount Clemens, MI 48043-2306<br><br>
