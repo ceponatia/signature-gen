@@ -110,10 +110,10 @@ function generateSignature() {
   fax = formatPhoneNumber(fax);
 
 var assistantLine = "";
-  if (unit === "Assistant Prosecuting Attorney") {
+  if (unit === "Prosecuting Attorney" || unit === "Assistant Prosecuting Attorney") {
     assistantLine = "<br>Assistant Prosecuting Attorney";
   }
-
+  
   var signature = `
     <div id="innerSignature">
     <strong>${fullName}${pNumber ? " (P" + pNumber + ")" : ""}${assistantLine}</strong><br>
