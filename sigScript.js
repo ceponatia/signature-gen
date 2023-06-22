@@ -50,8 +50,8 @@ const copyButton = document.getElementById('copyButton');
 
 // Add click event listener to the button
 copyButton.addEventListener('click', () => {
-    const textToCopy = document.getElementById('textToCopy').value;
-    copyToClipboard(textToCopy);
+    const textToCopy = document.getElementById('signature').value;
+    copyToClipboard(signature);
 });
 
 function generateSignature() {
