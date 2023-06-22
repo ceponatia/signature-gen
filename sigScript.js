@@ -109,11 +109,14 @@ function generateSignature() {
   deskPhone = formatPhoneNumber(deskPhone);
   fax = formatPhoneNumber(fax);
 
+var assistantLine = "";
+  if (unit === "Prosecuting Attorney") {
+    assistantLine = "<br>Assistant Prosecuting Attorney";
+  }
+
   var signature = `
     <div id="innerSignature">
-    <strong>${fullName}${pNumber ? " (P" + pNumber + ")" : ""}${
-    pNumber ? "<br>Assistant Prosecuting Attorney" : ""
-  }</strong><br>
+    <strong>${fullName}${pNumber ? " (P" + pNumber + ")" : ""}${assistantLine}</strong><br>
       ${unit === "Prosecuting Attorney" ? "" : (unit ? unit + "<br>" : "")} // Omit unit for "Prosecuting Attorney"
       Macomb County Prosecutor's Office<br>
       One South Main - 4th Floor<br>
