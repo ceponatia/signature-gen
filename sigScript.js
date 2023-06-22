@@ -69,6 +69,7 @@ function generateSignature() {
 
     workCell = formatPhoneNumber(workCell);
     deskPhone = formatPhoneNumber(deskPhone);
+    fax = formatPhoneNumber(fax);
 
     var signature = `
     <div>
